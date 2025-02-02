@@ -1,19 +1,19 @@
 #include <iostream>
 #include <vector>
-#include <numeric> // For std::accumulate
+#include <numeric> 
 
-// Function declarations
+
 void printVector(const std::vector<int>& vec);
 void doubleVector(std::vector<int>& vec);
 int calculateSum(const std::vector<int>& vec);
 void printMultiples(const std::vector<int>& vec, int multiple);
 
 int main() {
-    std::vector<int> numbers; // The main vector to store user input
+    std::vector<int> numbers; 
     int choice = 0;
 
     do {
-        // Menu options
+        
         std::cout << "\nMenu:\n";
         std::cout << "1. Add an item to the vector\n";
         std::cout << "2. Print the vector\n";
@@ -61,7 +61,7 @@ int main() {
     return 0;
 }
 
-// Function to print the vector
+
 void printVector(const std::vector<int>& vec) {
     if (vec.empty()) {
         std::cout << "The vector is empty.\n";
@@ -75,7 +75,7 @@ void printVector(const std::vector<int>& vec) {
     std::cout << std::endl;
 }
 
-// Function to double each element in the vector
+
 void doubleVector(std::vector<int>& vec) {
     for (int& num : vec) {
         num *= 2;
@@ -83,12 +83,12 @@ void doubleVector(std::vector<int>& vec) {
     std::cout << "The vector has been doubled.\n";
 }
 
-// Function to calculate the sum of vector elements
+
 int calculateSum(const std::vector<int>& vec) {
     return std::accumulate(vec.begin(), vec.end(), 0);
 }
 
-// Function to print multiples of a user-defined value
+ 
 void printMultiples(const std::vector<int>& vec, int multiple) {
     if (vec.empty()) {
         std::cout << "The vector is empty.\n";
