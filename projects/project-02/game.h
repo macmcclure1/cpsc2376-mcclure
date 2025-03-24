@@ -3,7 +3,7 @@
 
 #include <iostream>
 
-class Game {
+class Game { //The Enum class that is made in or to create the board
 private:
     static constexpr int GRID_SIZE = 5;
     bool board[GRID_SIZE][GRID_SIZE];

@@ -6,7 +6,7 @@ Game::Game() {
             board[i][j] = true;  // All lights start ON
 }
 
-void Game::play(int row, int col) {
+void Game::play(int row, int col) { //this command is to show how the game will go. 
     if (row < 0 || row >= GRID_SIZE || col < 0 || col >= GRID_SIZE)
         return;
     
