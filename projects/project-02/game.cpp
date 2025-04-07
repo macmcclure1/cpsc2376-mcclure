@@ -18,6 +18,7 @@ void Game::play(int row, int col) { //this command is to show how the game will 
 }
 
 Game::Status Game::status() const {
+    if (GRID_SIZE <= 0) return ONGOING; // Ensure GRID_SIZE is valid
     for (int i = 0; i < GRID_SIZE; ++i)
         for (int j = 0; j < GRID_SIZE; ++j)
             if (board[i][j]) return ONGOING;
@@ -32,5 +33,4 @@ std::ostream& operator<<(std::ostream& os, const Game& game) {
     }
     return os;
 }
-
 

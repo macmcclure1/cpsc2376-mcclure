@@ -17,4 +17,4 @@ public:
     friend std::ostream& operator<<(std::ostream& os, const Game& game);
 };
 
-#endif /
+#endif // GAME_H
